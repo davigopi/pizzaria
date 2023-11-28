@@ -1,0 +1,9 @@
+adicionar arquivos no git:
+git add .
+fazer o commit:
+git commit -m "msn"
+fazer o push:
+git push origin "nome da branch normalmente main"
+
+ver status do git
+git status
