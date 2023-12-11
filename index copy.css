@@ -1,0 +1,95 @@
+
+ul{
+    /* background-color: aquamarine; */
+    display: flex;  /* posicao dos botoes*/
+    flex-direction: column;  /* Formato de coluna nos botoes*/
+    gap: 26px; /* distancia entre botões*/
+}
+li{
+    list-style: none;  /* sem os pontos de listagem*/
+}
+*{
+    font-family: cursive;  /* tipo de fonete de letra*/
+}
+a{
+    color: #6d676e;  /* cor da letra*/
+    background-color: #faa916; /* cor do botao*/
+    text-decoration: none;  /* remover linha abaixo da letra*/
+    /* padding: 8px; */ 
+    border-radius: 16px;  /* borda dos botoes */
+    padding: 10px 20px !important;  /* tamanho do botao */
+    /* box-shadow: 2px 2px 4px hsla(0, 18%, 93%, 0.1); */
+    /* transition: all .2s; */
+    font-weight: 800;  /* tamanho d agonte*/
+}
+a:hover{
+    box-shadow: 0px 0px 26px #fbfffe;  /* borda do campo selecionado */
+}
+/* */
+body{
+    color: #96031a;  /*cor do texto*/
+    background-color:#1b1b1e;  /* cor do fundo da tela*/
+    box-shadow: 0px 0px 36px #fbfffe;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
+    /* border: 1px solid #e6e6e6;   borda entrono do box*/ 
+    /* margin: auto; */
+    display: 0px;  /* borda superior e inferior */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding: 18px;  borda em torno */
+    padding-left: 36px;
+    padding-top: 0px;
+    padding-right: 36px;
+    padding-bottom: 2px;
+    width: fit-content;  /* borda auto ajustavel*/
+    /* border-radius: var(--glb-fd-item-side-border-radius,4px); */ 
+    margin-top: 140px;  /* margem no topo */
+    margin-bottom: calc(2%);  /*margem embaixo*/
+    margin-left: calc(1%);  /*margem na esquerda*/
+    margin-right: calc(1%);  /*margem na direita*/
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    background-color: #1b1b1e;  /* cor do fundo da tela*/
+    box-shadow: 0px 0px 36px #fbfffe;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
+    position: fixed;  /*deira uma posicao fixa na paguina*/
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    margin-top: calc(1%); /* margem no topo */
+    margin-bottom: calc(2%);  /*margem embaixo*/
+    margin-left: calc(1%);  /*margem na esquerda*/
+    margin-right: calc(1%);  /*margem na direita*/
+}
+
+
+.dadosPessoal{
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+    justify-content: space-between;  /* ajusta a posicao no espaço*/
+    background-color: #1b1b1e;  /* cor do fundo da tela*/
+    box-shadow: 0px 0px 6px #fbfffe;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
+    position: fixed;
+    /* position: relative; */
+    top: 10px;
+    left: 0;
+    right: 0;
+    /* padding: 8px; */
+    margin-top: calc(1%); /* margem no topo */
+    margin-bottom: calc(0,5%);  /*margem embaixo*/
+    margin-left: calc(0,5%);  /*margem na esquerda*/
+    margin-right: calc(0,5%);  /*margem na direita*/
+}
+
+#sobreMim{
+    /* color: rgb(252, 138, 0); */
+    display: flex;
+    align-items: center;
+    /* align-items: flex-end;  */
+    justify-content: space-between;
+}
