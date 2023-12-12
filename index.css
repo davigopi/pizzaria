@@ -28,15 +28,33 @@ a{
 }
 
 a:hover{
-    box-shadow: 0px 0px 26px #000000;  /* borda do campo selecionado */
+
+}
+
+
+.amenu22:hover{
+    box-shadow: 0px 0px 26px #950202;  /* borda do campo selecionado */
     margin-top: calc(10%); /* margem no topo */
     margin-bottom: calc(10%);  /*margem embaixo*/
     margin-left: calc(10%);  /*margem na esquerda*/
     margin-right: calc(10%);  /*margem na direita*/
 }
 
-#ahead{
-	margin-left: calc(10%);  /*margem na esquerda */
+
+.amenu:hover{
+    box-shadow: 0px 0px 26px #950202;  /* borda do campo selecionado */
+    margin-top: calc(5%); /* margem no topo */
+    margin-bottom: calc(5%);  /*margem embaixo*/
+}
+
+.ahead{
+    margin-left: calc(3%);
+}
+.ahead:hover{
+	  /*margem na esquerda */
+    box-shadow: 0px 0px 26px #950202;  /* borda do campo selecionado */
+    margin-left: calc(2%);  /*margem na esquerda*/
+
 }
 
 .html{
@@ -84,6 +102,7 @@ a:hover{
     margin-bottom: calc(2%);  /*margem embaixo*/
     margin-left: calc(1%);  /*margem na esquerda*/
     margin-right: calc(1%);  /*margem na direita*/
+    overflow: hidden
 }
 
 #menu{
@@ -112,7 +131,7 @@ a:hover{
     margin-bottom: calc(2%);  /*margem embaixo*/
     margin-left: calc(6%);  /*margem na esquerda*/
     margin-right: calc(1%);  /*margem na direita*/
-    overflow: hidden
+    
 }
 
 #limenu{
@@ -223,5 +242,5 @@ table, td, tr, th{
 }
 
 #headBotoes{
-    width: 80%;
+    width: 70%;
 }
