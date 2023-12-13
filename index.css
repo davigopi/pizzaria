@@ -27,24 +27,44 @@ a{
     font-weight: 800;  /* tamanho d agonte*/
 }
 
-a:hover{
-
+::-webkit-scrollbar {
+    display: none;
 }
 
-
-.amenu22:hover{
-    box-shadow: 0px 0px 26px #950202;  /* borda do campo selecionado */
-    margin-top: calc(10%); /* margem no topo */
-    margin-bottom: calc(10%);  /*margem embaixo*/
-    margin-left: calc(10%);  /*margem na esquerda*/
-    margin-right: calc(10%);  /*margem na direita*/
+.imgs{
+    /* width: 60px; */
+    height: 100px
 }
 
+.html{
+    margin-top: 0%; 
+    height: calc(100%);
+    width: calc(100%)
+}
 
-.amenu:hover{
-    box-shadow: 0px 0px 26px #950202;  /* borda do campo selecionado */
-    margin-top: calc(5%); /* margem no topo */
-    margin-bottom: calc(5%);  /*margem embaixo*/
+.head{
+	color: #96031a;  /*cor do texto*/
+	box-shadow: 0px 0px 36px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
+	background:url("./img/fundo.png");
+	width: 92%;
+	display: flex;
+    align-items: center;
+	gap: 6px;
+	/* justify-content: flex-start; */
+	justify-content: space-between; 
+	/* background-repeat: no-repeat; */
+	background-size: 100% 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: calc(1%);  /* margem no topo */
+    margin-bottom: calc(1%);  /*margem embaixo*/
+    margin-left: calc(2%);  /*margem na esquerda*/
+    margin-right: calc(2%);  /*margem na direita*/
+    overflow: hidden;
+
+}
+#headBotoes{
+    width: 60%;
 }
 
 .ahead{
@@ -52,15 +72,38 @@ a:hover{
 }
 .ahead:hover{
 	  /*margem na esquerda */
-    box-shadow: 0px 0px 26px #950202;  /* borda do campo selecionado */
+    box-shadow: 10px -5px 26px #000000;  /* borda do campo selecionado */
+
     margin-left: calc(2%);  /*margem na esquerda*/
+  
+}
+.menu{
+	color: #96031a;  /*cor do texto*/
+	box-shadow: 0px 0px 36px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
+	background:url("./img/fundo.png");
+	/* width: 85%; */
+	/* height: 50%; */
+	display: flex;
+	align-items: center;
+	/* gap: 2px; */
+	justify-content: space-between; 
+	background-size: 100% 100%;
+    top: calc(1%);
+    left: calc(1%);
+    right: calc(1%);
 
+    padding-left: 5px;
+    padding-top: 75px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+
+    margin-top: calc(6%);  /* margem no topo */
+    margin-bottom: calc(6%);  /*margem embaixo*/
+    margin-left: calc(6%);  /*margem na esquerda*/
+    margin-right: calc(6%);  /*margem na direita*/
+    /* overflow: hidden; */
 }
 
-.html{
-    height: calc(100%);
-    width: calc(100%)
-}
 
 .menuCabecalho{   /*classe*/
     display: flex;
@@ -69,80 +112,25 @@ a:hover{
     /* background-color: #1b1b1e;  cor do fundo da tela*/
 	background-color: transparent;
     box-shadow: 0px 0px 36px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
-    position: fixed;  /* ira uma posicao fixa na paguina*/
+    position: fixed;  /*ira uma posicao fixa na paguina */
     /* position: relative; */
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 8px;
+
+    top: calc(1%);
+    left: calc(1%);
+    right: calc(1%);
+    padding: calc(1%);
+
     margin-top: calc(1%); /* margem no topo */
     margin-bottom: calc(2%);  /*margem embaixo*/
     margin-left: calc(1%);  /*margem na esquerda*/
     margin-right: calc(1%);  /*margem na direita*/
 }
 
-#head{
-	color: #96031a;  /*cor do texto*/
-	box-shadow: 0px 0px 0px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
-	background:url("./img/fundo.png");
-	width: 100%;
-	/* height: 50%; */
-	display: flex;
-    align-items: center;
-	gap: 6px;
-	/* justify-content: flex-start; */
-	justify-content: space-between; 
-	/* background-repeat: no-repeat; */
-	background-size: 100% 100%;
-    padding-left: 36px;
-    padding-top: 5px;
-    padding-right: 36px;
-    padding-bottom: 2px;
-    margin-top: calc(1%); /* margem no topo */
-    margin-bottom: calc(2%);  /*margem embaixo*/
-    margin-left: calc(1%);  /*margem na esquerda*/
-    margin-right: calc(1%);  /*margem na direita*/
-    overflow: hidden
-}
 
-#menu{
-	color: #96031a;  /*cor do texto*/
-	box-shadow: 0px 0px 36px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
-	background:url("./img/fundo.png");
-	width: 85%;
-	/* height: 50%; */
-	display: flex;
-	align-items: center;
-	gap: 6px;
-	justify-content: space-between; 
-	background-size: 100% 100%;
-    /* border: 1px solid #e6e6e6;   borda entrono do box*/ 
-    /* margin: auto; */
-    /* display: 0px;  borda superior e inferior */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* padding: 18px;  borda em torno */
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 2px;
-    margin-top: calc(6%);  /* margem no topo */
-    margin-bottom: calc(2%);  /*margem embaixo*/
-    margin-left: calc(6%);  /*margem na esquerda*/
-    margin-right: calc(1%);  /*margem na direita*/
-    
-}
-
-#limenu{
-    /* top: 0;
-    left: 0;
-    right: 0;
-    padding: 8px; */
-    margin-top: calc(10%); /* margem no topo */
-   	margin-bottom: calc(10%);  /*margem embaixo */
-    margin-left: calc(0%);  /*margem na esquerda */
-   	margin-right: calc(0%);  /*margem na direita */
+.amenu:hover{
+    box-shadow: -10px 0px 26px #000000;  /* borda do campo selecionado */
+    margin-top: calc(5%); /* margem no topo */
+    margin-bottom: calc(5%);  /*margem embaixo*/
 }
 
 #home{
@@ -150,39 +138,34 @@ a:hover{
     color: #96031a;  /*cor do texto*/
 	background:url("./img/Forno.jpg");
 	background-repeat: no-repeat;
-    /* background-size: cover; */
 	background-size: 100% 100%; 
     box-shadow: 0px 0px 36px #ffffff;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
-    /* border: 1px solid #e6e6e6;   borda entrono do box*/ 
-    /* margin: auto; */
     display: 0px;  /* borda superior e inferior */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* padding: 18px;  borda em torno */
-    padding-left: 36px;
+
+    top: calc(1%);
+    left: calc(1%);
+    right: calc(1%);
+    padding: calc(1%);
+    /* padding-left: 36px;
     padding-top: 0px;
     padding-right: 36px;
-    padding-bottom: 2px;
-    width: fit-content;  /* borda auto ajustavel*/
-    /* border-radius: var(--glb-fd-item-side-border-radius,4px); */ 
-    margin-top: 10px;  /* margem no topo */
+    padding-bottom: 2px; */
+    
+    margin-top: calc(1%);  /* margem no topo */
     margin-bottom: calc(2%);  /*margem embaixo*/
     margin-left: calc(1%);  /*margem na esquerda*/
     margin-right: calc(1%);  /*margem na direita*/
-    /* height: 98%; */
+
+    width: fit-content;
+
     overflow: hidden
 }
 
 .pizza{
-	/* margin-top: 5px; */
-	/* margin-bottom: 60px; */
-	width: 500px;
-	height: 300px;
-	padding-top: 50px;
-	padding-left: 330px;
-    /* position: absolute;
-    left: 30%; */
+	width: calc(65%);
+	height: calc(70%);
+	padding-top: calc(8%);
+	padding-left: calc(43%);
 }
 
 /* animação */
@@ -197,17 +180,15 @@ a:hover{
 	--selected-item: 0;
 	--total-items: 4;
 	list-style-type: none;
-	margin: 100px 0;
+	margin: 0 0;
 	padding: 0;
-	position: relative;
 	left: calc(var(--selected-item) * -66.6%);
 	width: calc(var(--total-items) * 100%);
-	height: calc(var(--total-items) * 60px);  
+	height: calc(var(--total-items) * 100%);  
 	transition: left 2.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 	display: grid;
 	grid-auto-flow: column;
 	grid-auto-columns: 1fr;
-	/* background-size: 100% 100% */
     position: relative;
 }
   
@@ -241,6 +222,3 @@ table, td, tr, th{
 	border: 1px solid #96031a;
 }
 
-#headBotoes{
-    width: 70%;
-}
