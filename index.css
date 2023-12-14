@@ -63,31 +63,51 @@ a{
     overflow: hidden;
 
 }
-#headBotoes{
+/* #headBotoes{
     width: 60%;
-}
+} */
 
-.ahead{
+/* .ahead{
     margin-left: calc(3%);
-}
-.ahead:hover{
+} */
+
+#ahead1:hover{
 	  /*margem na esquerda */
     box-shadow: 10px -5px 26px #000000;  /* borda do campo selecionado */
-
     margin-left: calc(2%);  /*margem na esquerda*/
-  
 }
+
+#ahead2:hover{
+    /*margem na esquerda */
+  box-shadow: 10px -5px 26px #000000;  /* borda do campo selecionado */
+  margin-left: calc(2%);  /*margem na esquerda*/
+}
+
+#ahead3:hover{
+    /*margem na esquerda */
+  box-shadow: 10px -5px 26px #000000;  /* borda do campo selecionado */
+  margin-left: calc(2%);  /*margem na esquerda*/
+}
+
+#ahead4:hover{
+    /*margem na esquerda */
+  box-shadow: 10px -5px 26px #000000;  /* borda do campo selecionado */
+  margin-left: calc(2%);  /*margem na esquerda*/
+}
+
+
+
 .menu{
-	color: #96031a;  /*cor do texto*/
-	box-shadow: 0px 0px 36px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
-	background:url("./img/fundo.png");
-	/* width: 85%; */
-	/* height: 50%; */
-	display: flex;
-	align-items: center;
-	/* gap: 2px; */
-	justify-content: space-between; 
-	background-size: 100% 100%;
+    color: #96031a;  /*cor do texto*/
+    box-shadow: 0px 0px 36px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
+    background:url("./img/fundo.png");
+    /* width: 85%; */
+    /* height: 50%; */
+    display: flex;
+    align-items: center;
+    /* gap: 2px; */
+    justify-content: space-between; 
+    background-size: 100% 100%;
     top: calc(1%);
     left: calc(1%);
     right: calc(1%);
@@ -103,79 +123,63 @@ a{
     margin-right: calc(6%);  /*margem na direita*/
     /* overflow: hidden; */
 }
-
-
-.menuCabecalho{   /*classe*/
-    display: flex;
-    align-items: center;
-    gap: 26px;
-    /* background-color: #1b1b1e;  cor do fundo da tela*/
-	background-color: transparent;
-    box-shadow: 0px 0px 36px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
-    position: fixed;  /*ira uma posicao fixa na paguina */
-    /* position: relative; */
-
-    top: calc(1%);
-    left: calc(1%);
-    right: calc(1%);
-    padding: calc(1%);
-
-    margin-top: calc(1%); /* margem no topo */
-    margin-bottom: calc(2%);  /*margem embaixo*/
-    margin-left: calc(1%);  /*margem na esquerda*/
-    margin-right: calc(1%);  /*margem na direita*/
-}
-
-
 .amenu:hover{
     box-shadow: -10px 0px 26px #000000;  /* borda do campo selecionado */
     margin-top: calc(5%); /* margem no topo */
     margin-bottom: calc(5%);  /*margem embaixo*/
 }
 
-#home{
-	/* width: 10%; */
-    color: #96031a;  /*cor do texto*/
-	background:url("./img/Forno.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%; 
-    box-shadow: 0px 0px 36px #ffffff;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
-    display: 0px;  /* borda superior e inferior */
 
-    top: calc(1%);
-    left: calc(1%);
-    right: calc(1%);
-    padding: calc(1%);
+
+
+
+#home{
+
+    background:url("./img/fundo.png");
+	/* background-repeat: no-repeat; */
+	background-size: 100% 100%; 
+    box-shadow: 0px 0px 36px #000000; 
+    /* display: 0px;  borda superior e inferior */
     /* padding-left: 36px;
     padding-top: 0px;
     padding-right: 36px;
     padding-bottom: 2px; */
-    
-    margin-top: calc(1%);  /* margem no topo */
-    margin-bottom: calc(2%);  /*margem embaixo*/
-    margin-left: calc(1%);  /*margem na esquerda*/
-    margin-right: calc(1%);  /*margem na direita*/
-
     width: fit-content;
-
     overflow: hidden
 }
 
+#forno{
+    background:url("./img/Forno.jpg");
+	/* background-repeat: no-repeat; */
+	background-size: 100% 100%; 
+    box-shadow: 0px 0px 36px #ffffff; 
+}
+
 .pizza{
-	width: calc(65%);
-	height: calc(70%);
-	padding-top: calc(8%);
-	padding-left: calc(43%);
+    width: calc(100%);
+    height: calc(40%);
+    padding-block-end: calc(10%);
+    padding-top: calc(30%);
+    padding-left: calc(24%);
+    /* gap: 200px */
 }
 
 /* animação */
-.slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
+/* .slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
 .slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 1;}
 .slide-controller:nth-child(3):checked ~ .slide-show .slides-list{--selected-item: 2;}
 .slide-controller:nth-child(4):checked ~ .slide-show .slides-list{--selected-item: 3;}
 .slide-controller:nth-child(5):checked ~ .slide-show .slides-list{--selected-item: 4;}
-.slide-controller:nth-child(6):checked ~ .slide-show .slides-list{--selected-item: 5;}
-.slide-show{overflow: hidden;}
+.slide-controller:nth-child(6):checked ~ .slide-show .slides-list{--selected-item: 5;} */
+
+
+.slide-controller:nth-child(1):checked ~ #forno .slides-list{--selected-item: 0;}
+.slide-controller:nth-child(2):checked ~ #forno .slides-list{--selected-item: 1;}
+.slide-controller:nth-child(3):checked ~ #forno .slides-list{--selected-item: 2;}
+.slide-controller:nth-child(4):checked ~ #forno .slides-list{--selected-item: 3;}
+.slide-controller:nth-child(5):checked ~ #forno .slides-list{--selected-item: 4;}
+.slide-controller:nth-child(6):checked ~ #forno .slides-list{--selected-item: 5;}
+
 .slides-list{
 	--selected-item: 0;
 	--total-items: 4;
@@ -184,12 +188,14 @@ a{
 	padding: 0;
 	left: calc(var(--selected-item) * -66.6%);
 	width: calc(var(--total-items) * 100%);
-	height: calc(var(--total-items) * 100%);  
 	transition: left 2.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
 	display: grid;
 	grid-auto-flow: column;
-	grid-auto-columns: 1fr;
+	grid-auto-columns: auto;
+    /* grid-gap: 2000px; */
+    grid-column-gap: 10px;
     position: relative;
+    
 }
   
 #foot{
@@ -222,3 +228,174 @@ table, td, tr, th{
 	border: 1px solid #96031a;
 }
 
+
+.sanduiche{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.barra{
+    width: 20px;
+    height: 4px;
+    background-color: #96031a;
+}
+
+
+
+.menuCabecalho{   /*classe*/
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    /* background-color: #1b1b1e;  cor do fundo da tela*/
+    background-color: transparent;
+    box-shadow: 0px 0px 36px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
+    position: fixed;  /*ira uma posicao fixa na paguina */
+    /* position: relative; */
+
+    top: calc(1%);
+    left: calc(1%);
+    right: calc(1%);
+    padding: calc(1%);
+
+    margin-top: calc(1%); /* margem no topo */
+    margin-bottom: calc(2%);  /*margem embaixo*/
+    margin-left: calc(1%);  /*margem na esquerda*/
+    margin-right: calc(1%);  /*margem na direita*/
+}
+
+
+@media (max-width:1455px){
+    #ahead1{
+        margin-left: calc(0%);
+    }
+    #ahead2{
+        margin-left: calc(0%);
+    }
+    #ahead3{
+        margin-left: calc(0%);
+    }
+    #ahead4{
+        margin-left: calc(0%);
+    }
+}
+
+@media (min-width: 1456px){
+    #ahead1{
+        margin-left: calc(3%);
+    }
+    #ahead2{
+        margin-left: calc(3%);
+    }
+    #ahead3{
+        margin-left: calc(3%);
+    }
+    #ahead4{
+        margin-left: calc(3%);
+    }
+
+}
+
+
+@media (max-width:1281px){
+    #headBotoes{
+        width: 68%;
+    }
+}
+
+@media (min-width: 1282px){
+    #headBotoes{
+        width: 60%;
+    }
+}
+
+
+@media (max-width:1160px){
+    #headlogo{ 
+        display: none;
+    }
+}
+
+@media (max-width:1132px){
+    #ahead4{
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 1131px){
+    .sanduiche{
+        display: none;
+    }
+      .menu{
+        color: #96031a;  /*cor do texto*/
+        box-shadow: 0px 0px 36px #000000;  /* borda degrader  (desvio direita, desvio baixo, tamanho da sombra)*/
+        /* background:url("./img/fundo.png"); */
+        /* width: 85%; */
+        /* height: 50%; */
+        display: flex;
+        align-items: center;
+        /* gap: 2px; */
+        justify-content: space-between; 
+        background-size: 100% 100%;
+        top: calc(1%);
+        left: calc(1%);
+        right: calc(1%);
+    
+        padding-left: 5px;
+        padding-top: 75px;
+        padding-right: 5px;
+        padding-bottom: 2px;
+    
+        margin-top: calc(6%);  /* margem no topo */
+        margin-bottom: calc(6%);  /*margem embaixo*/
+        margin-left: calc(6%);  /*margem na esquerda*/
+        margin-right: calc(6%);  /*margem na direita*/
+        /* overflow: hidden; */
+    }
+    .amenu:hover{
+        box-shadow: -10px 0px 26px #77ff00;  /* borda do campo selecionado */
+        margin-top: calc(0%); /* margem no topo */
+        margin-bottom: calc(0%);  /*margem embaixo*/
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:940px){
+    #ahead3{
+        display: none;
+    }
+    #footimg{
+        display: none;
+    }
+    
+}
+
+@media (max-width:650px){
+    #ahead2{
+        display: none;
+    }
+}
+
+
+
+
+
+/* 
+@media (max-width: 600px) {
+    #ahead1{
+        display: none;
+    }
+}
+
+@media (min-width: 601px) {
+
+} */
